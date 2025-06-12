@@ -1,0 +1,31 @@
+* {
+    font-family: "Montserrat", Helvetica;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.harden-navigation-logo {
+
+font-family: "Montserrat-Bold", Helvetica;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 700;
+letter-spacing: -0.10px;
+line-height: 20px;
+}
+
+.harden-navigation-logo-italic {
+font-style: italic;
+}
+
+.hero-banner {
+    background-image: url(../images/hero-banner.jpg);
+    width: 1136px;
+    height: 600px;
+    background-size: contain;
+    border-radius: 20px;
+}
