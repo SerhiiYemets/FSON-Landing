@@ -7,6 +7,37 @@ a{
     text-decoration: none;
     color: black;
 }
+button {
+    cursor: pointer;
+}
+
+.button-primary {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: orange;
+}
+
+.button-primary:hover {
+    background-color: #fcf1e0;
+    color: orange;
+}
+
+.button-secondary {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.button-secondary:hover {
+    color: orange;
+}
+
+.text-higlight {
+    color: orange;
+}
+
+/* harder-navigation start*/
 
 .harden-navigation-logo {
 
@@ -22,6 +53,9 @@ line-height: 20px;
 font-style: italic;
 }
 
+/* Hero section start*/
+
+/* hero-banner start*/
 .hero-banner {
     background-image: url(../images/hero-banner.jpg);
     width: 1136px;
@@ -29,3 +63,245 @@ font-style: italic;
     background-size: contain;
     border-radius: 20px;
 }
+
+.hero-banner-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+    letter-spacing: -0.03em;
+}
+
+.hero-banner-button-scroll {
+    color: #fff;
+}
+
+.hero-banner-button-scroll-images {}
+
+/* hero-banner end*/
+
+/* Benefits starts */
+.benefits {
+    background-color: #1e1823;;
+}
+
+.benefits-list {}
+
+.benefits-list-item {}
+
+.benefits-list-item-images {}
+
+.benefits-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.benefits-list-title-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Benefits end */
+
+/* Taste starts */
+.taste {}
+
+.taste-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+.taste-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black);
+}
+
+.taste-list {}
+
+.taste-list-item {}
+
+.taste-list-item-image {}
+
+.taste-list-item-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;;
+}
+.width-text {
+    color: #fff;
+}
+.list-item-milk {
+    background-color: orange;
+}
+
+.list-item-nuts {
+    background-color: #1e1823;
+}
+
+/* Taste end */
+
+/* Recipe start*/
+
+.recipe {}
+
+.recipe-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--black);
+}
+
+.recipe-image {}
+
+.recipe-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--black);
+}
+
+.recipe-subtitle-list {}
+
+.recipe-subtitle-list-item {}
+
+.recipe-subtitle-list-item-text { 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+
+/* Recipe end*/
+
+/* Review start*/
+
+.review {}
+
+.review-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review-list {}
+
+.review-list-item {}
+
+.review-list-item-image {}
+
+.review-list-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #111;
+}
+
+.review-list-item-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--black);
+}
+
+/* Review end*/
+
+/* Footer section start */
+
+.bottom {
+    background-color: #1e1823;
+}
+
+.bottom-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bottom-contakts {}
+
+.bottom-contakts-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fff;
+}
+
+.bottom-contakts-adress {}
+
+.bottom-contakts-adress-list {
+    
+}
+
+.bottom-contakts-adress-list-item {
+    
+    font-weight: 400;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.bottom-contakts-adress-list-item-number, 
+.bottom-contakts-adress-list-item-mail,
+.bottom-contakts-title {
+    color: #fff;
+}
+
+.bottom-contakts-adress-list-item-number {}
+
+.bottom-contakts-adress-list-item-mail {}
+
+.bottom-navigation {
+    
+}
+
+.bottom-navigation-list {}
+
+.bottom-navigation-list-item {}
+
+.bottom-navigation-list-anchor {
+    font-weight: 500;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.bottom-subcribe {}
+
+.bottom-subcribe-email {}
+
+.bottom-subcribe-submit {}
+
+/* Footer section start */
