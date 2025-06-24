@@ -2,6 +2,16 @@
     font-family: "Montserrat", Helvetica;
     list-style-type: none;
 }
+h1,h2,h3,h4,h5,h6,p,div,a {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
 
 a{
     text-decoration: none;
@@ -11,30 +21,77 @@ button {
     cursor: pointer;
 }
 
-.button-primary {
+.containers {
+    width: 1136px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+}
+
+.hero-banner-title,
+.bottom-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+}
+
+
+
+.button-primary, 
+.button-secondary,
+.hero-banner-title,
+.hero-banner-button-scroll,
+.benefits-title,
+.width-text,
+.bottom-title,
+.bottom-contakts-title,
+.bottom-contakts-adress-list-item,
+.bottom-contakts-adress-list-item-number,
+.bottom-contakts-adress-list-item-mail,
+.bottom-contakts-title,
+.bottom-navigation-list-anchor {
     color: #fff;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.text-higlight {
+    color: orange;
+}
+
+.button-primary,
+.list-item-milk {
+    background-color: orange;
+
+}
+
+
+
+.button-primary,
+.button-secondary
+{
     font-weight: 600;
     font-size: 14px;
-    background-color: orange;
+    border-radius: 100px;
+    padding: 14px 40px;
+    border: none;
+}
+
+.button-secondary {
+    background-color: rgba(255, 255, 255, 0);
+    border: #fff solid 1px;
 }
 
 .button-primary:hover {
     background-color: #fcf1e0;
-    color: orange;
-}
-
-.button-secondary {
-    color: #fff;
-    font-weight: 600;
-    font-size: 14px;
 }
 
 .button-secondary:hover {
-    color: orange;
+
 }
 
 .text-higlight {
-    color: orange;
+
 }
 
 /* harder-navigation start*/
@@ -44,14 +101,42 @@ button {
 font-family: "Montserrat-Bold", Helvetica;
 text-transform: uppercase;
 font-size: 18px;
+flex-grow: 1;
 font-weight: 700;
 letter-spacing: -0.10px;
 line-height: 20px;
+align-items: center;
 }
 
+.harden-navigation-direction {
+    display: flex;
+    align-items: center;
+}
+
+.harden-navigation-direction ul {
+    display: flex;
+
+}
+.harden-navigation-menu {
+    gap: 24px;
+    margin-right: 90px;
+}
+
+.harden-navigation-menu li{
+    font-weight: 500;
+    
+}
+
+.harden-navigation-menu-social{
+    gap: 18px;
+}
 .harden-navigation-logo-italic {
 font-style: italic;
 }
+.header {
+    margin: 32px o 32px 0;
+}
+
 
 /* Hero section start*/
 
@@ -62,21 +147,45 @@ font-style: italic;
     height: 600px;
     background-size: contain;
     border-radius: 20px;
+    margin-bottom: 72px;
+    
+}
+
+.hero-banner-content {
+    padding: 381px 40px 40px 40px;
+}
+
+.hero-banner-content-buttons {
+    display: flex;
+    align-content: center;
+}
+
+.hero-banner-content-buttons div:first-child {
+    flex-grow: 1;
+    display: flex;
+    gap: 14px;
 }
 
 .hero-banner-title {
-    color: #fff;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 121%;
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
 }
 
 .hero-banner-button-scroll {
-    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.hero-banner-button-scroll-images {}
+.hero-banner-button-scroll span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hero-banner-button-scroll-images {
+    
+}
 
 /* hero-banner end*/
 
@@ -85,16 +194,27 @@ font-style: italic;
     background-color: #1e1823;;
 }
 
-.benefits-list {}
+.benefits .containers {
+    width: calc((100% - 2 * 88) / 3);
+}
+
+.benefits-list {
+    display: flex;
+    padding: 50px;
+    gap: 87px;
+}
 
 .benefits-list-item {}
 
-.benefits-list-item-images {}
+.benefits-list-item-images {
+    padding-bottom: 22px;
+    padding-top: 18px;
+}
 
 .benefits-title {
     font-weight: 600;
     font-size: 18px;
-    color: #fff;
+    padding-bottom: 18px;
 }
 
 .benefits-list-title-text {
@@ -106,7 +226,9 @@ font-style: italic;
 /* Benefits end */
 
 /* Taste starts */
-.taste {}
+.taste {
+    margin-top: 100px;
+}
 
 .taste-title {
     font-weight: 600;
@@ -114,8 +236,14 @@ font-style: italic;
     line-height: 117%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    text-align: center;
     color: black;
+    max-width: 411px;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+.taste-subtitle, .taste-title {
+margin: 0 auto;
 }
 
 .taste-subtitle {
@@ -124,12 +252,23 @@ font-style: italic;
     line-height: 129%;
     letter-spacing: -0.02em;
     text-align: center;
-    color: var(--black);
+    color: black;
+    width: 486px;
+    margin-bottom: 50px;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    gap: 18px;
+    padding-left: 0;
+}
 
-.taste-list-item {}
+.taste-list-item {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    padding: 28px 36px 28px 28px; 
+
+}
 
 .taste-list-item-image {}
 
@@ -138,24 +277,34 @@ font-style: italic;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.02em;
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    margin-top: 36px;
+
+
 }
 .width-text {
-    color: #fff;
+
 }
 .list-item-milk {
-    background-color: orange;
+
 }
 
 .list-item-nuts {
     background-color: #1e1823;
 }
 
+.taste {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 /* Taste end */
 
 /* Recipe start*/
 
-.recipe {}
+.recipe {
+    margin-bottom: 100px;
+    
+}
 
 .recipe-title {
     text-transform: uppercase;
@@ -165,20 +314,45 @@ font-style: italic;
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--black);
+    margin-bottom: 50px;
+    
+}
+.recipe-content {
+    display: flex;
+
 }
 
-.recipe-image {}
+.recipe-content img {
+    margin-right: 20px;
+
+}
+.recipe-content section {
+    padding: 32px;
+}
+
+.recipe-image {
+    
+}
 
 .recipe-subtitle {
     font-weight: 600;
     font-size: 18px;
     line-height: 133%;
     color: var(--black);
+    margin-bottom: 28px;
 }
 
-.recipe-subtitle-list {}
+.recipe-subtitle-list {
 
-.recipe-subtitle-list-item {}
+}
+
+.recipe-subtitle-list-item {
+    padding-bottom: 24px;
+}
+
+.recipe-subtitle-list-item:last-child {
+    padding-bottom: 0;
+}
 
 .recipe-subtitle-list-item-text { 
     font-weight: 400;
@@ -192,7 +366,15 @@ font-style: italic;
 
 /* Review start*/
 
-.review {}
+.review {
+    
+}
+
+.review .title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 .review-title {
     font-weight: 600;
@@ -201,13 +383,26 @@ font-style: italic;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 50px;
+    
 }
 
-.review-list {}
+.review-list {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
 
-.review-list-item {}
+.review-list-item {
+    text-align: center;
+    width: 360px;
+}
 
-.review-list-item-image {}
+.review-list-item-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+}
 
 .review-list-item-title {
     font-weight: 600;
@@ -224,12 +419,16 @@ font-style: italic;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 50px;
+    padding: 24px;
+
 }
 
 .review-button {
     font-weight: 600;
     font-size: 18px;
     color: var(--black);
+    margin-bottom: 100px;
 }
 
 /* Review end*/
@@ -240,23 +439,30 @@ font-style: italic;
     background-color: #1e1823;
 }
 
+.bottom-title-content{
+
+}
+
 .bottom-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 121%;
     letter-spacing: -0.02em;
     text-align: left;
-    text-transform: uppercase;
-    color: #fff;
+    text-transform: lowercase;
+    margin-left: 32px;
+    padding-top: 50px;
 }
 
-.bottom-contakts {}
+
+.bottom-contakts {
+    text-align: right;
+}
 
 .bottom-contakts-title {
     font-weight: 500;
     font-size: 14px;
     line-height: 129%;
-    color: #fff;
 }
 
 .bottom-contakts-adress {}
@@ -270,13 +476,12 @@ font-style: italic;
     font-weight: 400;
     line-height: 129%;
     letter-spacing: -0.02em;
-    color: #fff;
 }
 
 .bottom-contakts-adress-list-item-number, 
 .bottom-contakts-adress-list-item-mail,
-.bottom-contakts-title {
-    color: #fff;
+.bottom-contakts-title { 
+
 }
 
 .bottom-contakts-adress-list-item-number {}
@@ -295,12 +500,22 @@ font-style: italic;
     font-weight: 500;
     line-height: 114%;
     letter-spacing: -0.02em;
-    color: #fff;
 }
 
-.bottom-subcribe {}
+.bottom-subcribe {
+   padding-left: 678px;
+   padding-bottom: 50px;
+}
 
-.bottom-subcribe-email {}
+.bottom-subcribe-email {
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 13px 24px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: #fff solid 1px;
+}
 
 .bottom-subcribe-submit {}
 
