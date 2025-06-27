@@ -429,6 +429,8 @@ margin: 0 auto;
     font-size: 18px;
     color: var(--black);
     margin-bottom: 100px;
+    border: 1px solid #fd9222;
+    width: 
 }
 
 /* Review end*/
